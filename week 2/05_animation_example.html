@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ball"></div>
+
+    <div class="ball1"></div>
+
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 50%;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .ball1 {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 50%;
+            animation: snake 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(500px);
+            }
+        }
+
+        @keyframes snake {
+            0% {
+                transform: translateX(0px) translateY(0px);
+            }
+
+            25% {
+                transform: translateX(200px) translateY(0px);
+            }
+
+            50% {
+                transform: translateX(200px) translateY(200px);
+            }
+
+            75% {
+                transform: translateX(400px) translateY(200px);
+            }
+
+            100% {
+                transform: translateX(400px) translateY(400px);
+            }
+        }
+    </style>
+</body>
+</html>
