@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+
+}
+body {
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    background-color: #201a19;
+    font-family: 'Montserrat', sans-serif;}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+nav {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem ;
+    margin-left: 12%;
+    margin-right: 12%;
+    background-color: #d0604c20;
+}
+
+nav > ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+nav > ul > li {
+    display: inline;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 4%;
+}
+
+section {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+article {
+    flex: 1;
+    text-align: justify;
+    margin: 2rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #d0604c20;
+}
+
+article > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Adjust the value to your desired number of lines */
+    overflow: hidden;
+    text-overflow: ellipsis;;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #d0604c;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    display: flex;
+    background-color: #d0604c20;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+footer > div {
+    flex: 1;
+}
+
+article:hover {
+    /* animation: hoverAnimation 500ms infinite alternate; */
+    background-color: #d0604c40;
+    transition: 0.5s ;
+    scale: 1.1;
+}
+
+nav > ul > li > a:hover {
+    color: #d0604c;
+    transition: 0.5s ;
+}
+/* 
+@keyframes hoverAnimation {
+    from {
+        transform: scale(1);
+        background-color: #d0604c20;
+    }
+
+    to {
+        transform: scale(1.1);
+        background-color: #d0604c40;
+    }
+} */
